@@ -17,6 +17,9 @@ import java.util.List;
  *@version 1.0
  */
 public class GetAllUsersCommand implements Command {
+    // мы разбирали реализацию команды и остановились на другой реализации
+    // однопоточную реализацию не используем
+    
     /** field service*/
     private AdministratorService service;
     /** field request*/
@@ -46,7 +49,8 @@ public class GetAllUsersCommand implements Command {
 
             return response.getResponse();
         } catch (ServiceException e) {
-            response = new ConsoleResponse("Can\'t find list of books");
+            response = new ConsoleResponse("Can\'t find list of books");// у этого оператора нет логического смылка в выполнении
+            // throw все равно угробит этот объект
             throw new CommandException(response.getResponse(), e);
         }
     }

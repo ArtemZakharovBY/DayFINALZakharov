@@ -102,6 +102,7 @@ public class AdministratorServiceImpl implements AdministratorService{
      * @throws ServiceException if was an error during the process of setting the information
      */
     @Override
+    // в слой сервисов уже нет необходимости передавать россыпь параметров, нормальный объект можно создать уровнем выше
     public void addBook(String title, String author, int dateOfPublishing, int bookAmount) throws ServiceException {
         if (!BookValuesValidator.validate(title, author, dateOfPublishing, bookAmount)){
             throw new InvalidPaperBookValuesException("Invalid paper book values!");

@@ -46,7 +46,8 @@ public class GetUsersSortedCommand implements Command {
             List<User> users = service.seeAllUsersSorted(sortParameter, sortType);
             response = new ConsoleResponse("Sorted users by parameter: " + sortParameter + "\n" + users.toString());
 
-            return response.getResponse();
+            return response.getResponse();// зачем создавать целый объект, чтобы возвращать только строку из него?
+            // где уснула твоя логика?
         } catch (ServiceException e) {
             response = new ConsoleResponse("Error with sort type or parameter of sorting");
             throw new CommandException(response.getResponse(), e);

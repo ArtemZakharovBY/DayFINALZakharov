@@ -8,13 +8,15 @@ import java.util.List;
 
 public class BookDAOImpl implements BookDAO {
     private static final BookDAOImpl INSTANCE = new BookDAOImpl();
-
+// мы специально разбирали способ, чтобы уйти в коде от синглтона
+    // и что я в итоге вижу?
+    
     private BookDAOImpl(){}
 
     public static BookDAOImpl getINSTANCE() {
         return INSTANCE;
     }
-
+// эм, а код где?
     @Override
     public BaseBook getBookById(int id) throws DAOException {
         return null;

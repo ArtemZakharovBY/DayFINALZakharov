@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+// не нужно так глубоко засовывать данные
 <!DOCTYPE real_library [
         <!ELEMENT real_library (books)*>
         <!ELEMENT books (book)*>

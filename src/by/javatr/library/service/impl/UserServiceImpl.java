@@ -20,7 +20,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService{
 
     /**@value UserServiceImpl field */
-    private static final UserServiceImpl instance = new UserServiceImpl();
+    private static final UserServiceImpl instance = new UserServiceImpl();// аналогично слою дао
 
     /**
      * Default Constructor - don't create new object

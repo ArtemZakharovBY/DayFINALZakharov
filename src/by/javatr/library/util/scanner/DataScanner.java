@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class DataScanner {
     private static final InputStream INPUT_STREAM = System.in;
-    private static final Scanner SCANNER = new Scanner(INPUT_STREAM);
+    private static final Scanner SCANNER = new Scanner(INPUT_STREAM);//ну и зачем козе такой баян? с объявление константы для и так уже константы
 
     public static int integerFromConsole(){
 

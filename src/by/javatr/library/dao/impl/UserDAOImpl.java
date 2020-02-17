@@ -6,7 +6,7 @@ import by.javatr.library.exception.dao.DAOException;
 
 import java.util.List;
 
-public class UserDAOImpl implements UserDAO {
+public class UserDAOImpl implements UserDAO {// аналогично предыдущему
     private static final UserDAOImpl INSTANCE = new UserDAOImpl();
 
     private UserDAOImpl(){}

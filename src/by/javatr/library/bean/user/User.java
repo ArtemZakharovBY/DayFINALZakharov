@@ -13,15 +13,16 @@ import by.javatr.library.util.generator.IdGenerator;
  *@author Zakharov Artem
  *@version 2.0
  */
-public class User implements Entity{
-
+public class User implements Entity{// да и  entity обячно ни от чего не наследуются, простые они
+// куда пропал serialVersioUID
     /** field id*/
     private int id;
 
     /** field name*/
     private String name;
 
-    /** field email*/
+    /** field email*/ //нет, ну без коментария назначения поля не понятно))
+    // коментарии должны быть по делу
     private String email;
 
     /** field status*/
@@ -32,7 +33,7 @@ public class User implements Entity{
      * @see User#User()
      */
     public User() {
-        id = IdGenerator.generate();
+        id = IdGenerator.generate();// так тоже не делается, сущности не создаются с каким-то id априори, tckb ye;yj - gecnm kjubrf utythbhetn b bybwbfkbpbhetn
     }
 
     /**
